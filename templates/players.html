@@ -1,0 +1,34 @@
+<!-- Uses template inheritance to derive everything off of the general 'base.html' html page in order to avoid repition-->
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 id="players_h"> Players Page</h1>
+    <div style="width: 68%; margin: auto">
+
+
+            <ul id="search">
+                {% for i in letter %}
+                    <li><a href="#{{i}}">{{ i }}</a></li>
+                {% endfor %}
+                <div style="clear: both"></div>
+            </ul>
+ </div>
+
+
+    <div id="middle">
+        <ul id="golfers">
+            {% for g in golfers %}
+            <li id="{{ g.name[0] }}">
+                <p id="name">{{ g.name }}</p>
+                <p id="a_point">Average Points <span id="a_point_val">{{ g.average_points }}</span></p>
+                <p id="t_point">Total Points <span id="t_point_val">{{ g.total_points }}</span></p>
+                <p id="e_played">Events Played <span id="e_played_val">{{ g.events_played }}</span></p>
+                <p id="p_lost">Points Lost <span id="p_lost_val">{{ g.points_lost }}</span></p>
+                <p id="p_gained">Points Gained <span id="p_gained_val">{{ g.points_gained }}</span></p>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+{% endblock %}

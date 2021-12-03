@@ -1,0 +1,168 @@
+#players_h{
+   font-family: Courier, monospace;
+    color: rgb(0,144,255);
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    border: 5px solid rgb(0,144,255);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 40px 100px;
+    background-color: rgba(0,144,255, 0.2);
+}
+
+li#players a{
+        border: 2px solid rgb(0,144,255);
+    background-color: rgba(0,144,255,0.7);
+    border-radius: 5px;
+}
+
+
+ul#search{
+    list-style-type: none;
+    max-width: 50%;
+    overflow:hidden;
+}
+
+ul#search li{
+   float: left;
+    width: 80px;
+}
+
+ul#search li a{
+    display: block;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px;
+    font-size:18px;
+    font-family: Courier, monospace;
+    text-align: center;
+}
+ul#search li a:active, ul#search li a:hover{
+    background-color: lightgray;
+}
+
+
+
+#middle{
+    clear: both;
+    margin-top: 90px;
+}
+
+ul#golfers{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+ul#golfers li{
+    display: inline-block;
+    padding: 0px;
+    width: 490px;
+    height: 250px;
+    border: 10px solid rgb(0,144,255);
+    border-radius: 20px;
+    margin: 15px 10px;
+    overflow: hidden;
+    font-family: Courier, monospace;
+    font-size: large;
+    text-align: center;
+}
+
+p#name{
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 4px;
+    background-color: rgb(0,144,255);
+}
+
+p#a_point{
+    border-top-style: hidden;
+
+    border-right-style: solid;
+    border-right-color: rgba(0,0,255,1);
+
+    border-bottom-style: hidden;
+
+    border-left-style: solid;
+    border-left-color: rgba(0,0,255,1);
+    border-width: 5px;
+
+}
+#a_point_val{
+    background-color: rgba(0,0,255,0.8);
+    border: 1px solid rgba(0,0,255,0.8);
+    border-radius: 5px;
+    padding-top: 0;
+}
+
+p#t_point{
+    border-top-style: hidden;
+
+    border-right-style: solid;
+    border-right-color: rgba(255,201,0,1);
+
+    border-bottom-style: hidden;
+    border-left-style: solid;
+    border-left-color: rgba(255,201,0,1);
+    border-width: 5px;
+}
+#t_point_val{
+    background-color: rgba(255,201,0,1);
+    border: 1px solid rgba(255,201,0,1);
+    border-radius: 5px;
+    padding-top: 0;
+}
+
+
+p#e_played{
+    border-top-style: hidden;
+    border-right-style: solid;
+    border-right-color: rgba(255,117,0,1);
+    border-bottom-style: hidden;
+    border-left-style: solid;
+    border-left-color: rgba(255,117,0,1);
+    border-width: 5px;
+
+}
+#e_played_val{
+    background-color: rgba(255,117,0,1);
+    border: 1px solid rgba(255,117,0,1);
+    border-radius: 5px;
+    padding-top: 0;
+}
+
+p#p_lost{
+    border-top-style: hidden;
+    border-right-style: solid;
+    border-right-color: rgba(255,0,0,1);
+    border-bottom-style: hidden;
+    border-left-style: solid;
+    border-left-color: rgba(255,0,0,1);
+    border-width: 5px;
+
+}
+#p_lost_val{
+    background-color:rgba(255,0,0,1);
+    border: 1px solid rgba(255,0,0,1);
+    border-radius: 5px;
+    padding-top: 0;
+}
+
+p#p_gained{
+    border-top-style: hidden;
+    border-right-style: solid;
+    border-right-color: rgba(17,234,0,1);
+    border-bottom-style: hidden;
+    border-left-style: solid;
+    border-left-color: rgba(17,234,0,1);
+    border-width: 5px;
+
+}
+#p_gained_val{
+    background-color:rgba(17,234,0,1);
+    border: 1px solid rgba(17,234,0,1);
+    border-radius: 5px;
+    padding-top: 0;
+}

@@ -1,0 +1,17 @@
+<!-- Uses template inheritance to derive everything off of the general 'base.html' html page in order to avoid repition-->
+{% extends "base.html" %}
+
+{% block content %}
+        <table id="home_table" style="border-spacing: 20px;">
+            <tr>
+                <td><img src="{{ url_for('static',  filename='ball1.jpg') }}" alt="golfball"/></td>
+                <td><img src="{{ url_for('static',  filename='tiger.jpg') }}" alt="tiger woods"/></td>
+            </tr>
+            <tr>
+                <td><img src="{{ url_for('static',  filename='ball2.jpg') }}" alt="golfball"/></td>
+                <td><img src="{{ url_for('static',  filename='swing1.jpg') }}" alt="golf swing"/></td>
+            </tr>
+        </table>
+
+
+{% endblock %}

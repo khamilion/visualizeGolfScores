@@ -1,0 +1,93 @@
+#main
+{
+    margin: 40px 130px;
+}
+
+img#logo{
+    width:45px;
+    height:30px;
+}
+
+span{
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+#top h3, ul{
+    display: inline;
+    letter-spacing: 5px;
+}
+
+#top h3 a{
+    padding-left: 40px;
+    font-weight: normal;
+    text-decoration-line: none;
+    color: black;
+}
+
+
+#top{
+    margin-top: 60px;
+    width: 90%;
+}
+
+#menubar ul
+{
+    list-style-type: none;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menubar li{
+    display: inline;
+    padding-left: 40px;
+    padding-right: 40px;
+    float: right;
+}
+
+li a{
+    color: black;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    text-decoration-line: none;
+    font-family: Courier, monospace;
+}
+
+li#players a{
+    border: 2px solid rgb(0,144,255);
+    background-color: rgba(0,144,255,0.7);
+    border-radius: 5px;
+}
+
+
+
+li#tot_avg a{
+        border: 2px solid rgb(255,201,0);
+    background-color: rgba(255,201,0,0.7);
+    border-radius: 5px;
+}
+
+
+li#gained_lost a{
+        border: 2px solid rgb(161, 0, 0);
+    background-color: rgba(161, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+
+#home_table{
+    margin: auto;
+    max-width: 90%;
+}
+
+
+td img{
+    width: 500px;
+    height: 400px;
+    border: 2px solid;
+    border-radius: 10px;
+
+}

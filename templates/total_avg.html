@@ -1,0 +1,33 @@
+<!-- Uses template inheritance to derive everything off of the general 'base.html' html page in order to avoid repition-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 id="top_hdg">Total Points | Average Points</h1>
+
+    <div id="mixedChart">
+        <canvas id="mixedCh" style="max-height:100%"></canvas>
+    </div>
+
+    <div id="mixedChart">
+        <canvas id="mixedCh2" style="max-height:100%"></canvas>
+    </div>
+
+    <div id="mixedChart">
+        <canvas id="mixedCh3" style="max-height:100%"></canvas>
+    </div>
+
+        <div id="mixedChart">
+        <canvas id="mixedCh4" style="max-height:100%"></canvas>
+    </div>
+
+    <div id="mixedChart">
+        <canvas id="mixedCh5" style="max-height:100%"></canvas>
+    </div>
+
+    <script>
+        start({{ golfers|safe }});
+    </script>
+
+{% endblock  %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GolfWorld</title>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/total_avg.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',  filename='css/p_gained_lost.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',  filename='css/players_css.css') }}">
+        <link rel="stylesheet" href="../static/css/index.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+        <script src="{{url_for('static', filename='javascript/p_gained_lost.js')}}"></script>
+        <script src="{{url_for('static', filename='javascript/total_avg.js')}}"></script>
+
+</head>
+    <body>
+            <div id="top">
+                <h3 style="font-size: 35px; font-family: Courier, monospace "><a href="{{ url_for('home') }}">GolfWorld
+                    <span><img id ="logo" src="{{ url_for('static',  filename='golfball.png') }}" alt="golfball"/></span></a>
+                </h3>
+
+                <ul id="menubar">
+                    <li id="tot_avg"><a href="{{ url_for('total_avg') }}">Total/Avg</a></li>
+                    <li id="gained_lost"><a href="{{ url_for('gained_lost') }}">Gained/Lost</a></li>
+                    <li id="players"><a href="{{ url_for('players') }}">Players</a></li>
+                </ul>
+            </div>
+
+        <div id="main">
+            {% block content %} {% endblock %}
+        </div>
+    </body>
+</html>
