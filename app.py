@@ -1,11 +1,13 @@
-# Flask-SQLAlchemy, an extension that provides a Flask-friendly wrapper to the popular SQLAlchemy package,
-#   which is an Object Relational Mapper or ORM.
+# this script hosts the application
 
 from flask import Flask
 import os
 import sqlite3
-from flask_sqlalchemy import SQLAlchemy
 
+
+# Create an instance of the Flask class imported from flask package
+# Flask uses the location of the module passed here (__name__) as a starting point when
+# it needs to load associated resources such as template files
 app = Flask(__name__)
 
 import routes

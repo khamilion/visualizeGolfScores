@@ -7,6 +7,11 @@ import sqlite3
 golf = []
 letter = []
 
+# route is a URl the application implements.
+
+# view functions handle the application routes. View functions are mapped to
+#   specific route URLs
+
 @app.route('/')
 @app.route('/home')
 def home():  # put application's code here
